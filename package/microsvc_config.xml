@@ -1,0 +1,60 @@
+<Config>
+	<Https>
+		<InfoPort>25040</InfoPort>
+		<ServicePort>8080</ServicePort>
+	</Https>
+
+	<Vender>KOALA</Vender>
+	<BaseInfo>
+		<Version>1.0</Version>
+		<CpuArch>aarch64</CpuArch>
+		<CpuNick>KuPeng</CpuNick>
+		<AccType>NPU</AccType>
+		<AccVersion>Atlas800</AccVersion>
+		<DriverVersion>Atlas1.73.5.1.B050</DriverVersion>
+		<LibVersion>Atlas20.0</LibVersion>
+		<ResourceReq>
+			<Cpu>10</Cpu>
+			<Mem>500</Mem>
+			<Acc>4</Acc>
+		</ResourceReq>
+	</BaseInfo>
+
+	<FileServer>
+		<Host>10.10.1.88</Host>
+		<Port>8888</Port>
+	</FileServer>
+
+	<CapacityInfo>
+		<Capacity BaseUri="/alg/cv/image/">
+			<Cp ShortName = "roadDamaged" Uri="cityManagement/roadDamaged" Description="Detect roadDamaged"/>
+			<Cp ShortName = "roadPonding" Uri="cityManagement/roadPonding" Description="Detect roadPonding"/>
+			<Cp ShortName = "garbageOverflow" Uri="cityManagement/garbageOverflow" Description="Detect garbageOverflow"/>
+			<Cp ShortName = "wellCoverAbnormal" Uri="cityManagement/wellCoverAbnormal" Description="Detect wellCoverAbnormal"/>
+			<Cp ShortName = "unlicensedBusinessVendor" Uri="cityManagement/unlicensedBusinessVendor" Description="Detect unlicensedBusinessVendor"/>
+			<Cp ShortName = "noneMotorVehicleParking" Uri="cityManagement/noneMotorVehicleParking" Description="Detect noneMotorVehicleParking"/>
+			<Cp ShortName = "motorVehicleParking" Uri="cityManagement/motorVehicleParking" Description="Detect motorVehicleParking"/>
+			<Cp ShortName = "loessExposed" Uri="cityManagement/loessExposed" Description="Detect loessExposed"/>
+			<Cp ShortName = "roadOccupatedInConstruction" Uri="cityManagement/roadOccupatedInConstruction" Description="Detect roadOccupatedInConstruction"/>
+			<Cp ShortName = "withoutHelmetOnSite" Uri="cityManagement/withoutHelmetOnSite" Description="Detect withoutHelmetOnSite"/>
+			<Cp ShortName = "offStoreOperation" Uri="cityManagement/offStoreOperation" Description="Detect offStoreOperation"/>
+			<Cp ShortName = "humanBreakIn" Uri="cityManagement/humanBreakIn" Description="Detect humanBreakIn"/>
+			<Cp ShortName = "VehicleLicenseRecognition" Uri="cityManagement/VehicleLicenseRecognition" Description="Detect VehicleLicenseRecognition"/>
+			<Cp ShortName = "leveeOrDamAbnormal" Uri="cityManagement/leveeOrDamAbnormal" Description="Detect leveeOrDamAbnormal"/>
+			<Cp ShortName = "GarbageExposed" Uri="cityManagement/GarbageExposed" Description="Detect GarbageExposed"/>
+			<Cp ShortName = "residueAccumulation" Uri="cityManagement/residueAccumulation" Description="Detect residueAccumulation"/>
+			<Cp ShortName = "bannerOrSlogansHungging" Uri="cityManagement/bannerOrSlogansHungging" Description="Detect bannerOrSlogansHungging"/>
+			<Cp ShortName = "vehicleOfDangerous" Uri="cityManagement/vehicleOfDangerous" Description="Detect bannerOrSlogansHungging"/>
+			<Cp ShortName = "peopleWithoutMask" Uri="cityManagement/peopleWithoutMask" Description="Detect peopleWithoutMask"/>
+			<Cp ShortName = "fireOrSmokeDetected" Uri="cityManagement/fireOrSmokeDetected" Description="Detect fireOrSmokeDetected"/>
+		</Capacity>
+		<InfType>OnceSync</InfType>
+		<AsyncType>HttpCallback</AsyncType>
+		<Tps>0</Tps>
+		<InputData>Image</InputData>
+	</CapacityInfo>
+	
+	
+	<LogLevel>trace</LogLevel>
+	
+</Config>
